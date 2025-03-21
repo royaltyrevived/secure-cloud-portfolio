@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,13 @@ const Header = () => {
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         <a 
           href="#" 
-          className="text-xl font-display font-medium animate-fade-in"
+          className="flex items-center space-x-2 animate-fade-in"
         >
-          <span className="text-gradient">Susan Malla</span>
+          <Avatar className="h-8 w-8 border-2 border-white shadow-sm">
+            <AvatarImage src="/lovable-uploads/ab883711-4134-45cb-b782-065f26670bc2.png" alt="Susan Malla" />
+            <AvatarFallback>SM</AvatarFallback>
+          </Avatar>
+          <span className="text-xl font-display font-medium text-gradient">Susan Malla</span>
         </a>
 
         {/* Desktop Navigation */}

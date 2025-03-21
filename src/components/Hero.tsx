@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { ChevronDownCircle } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -32,6 +33,13 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-center hero-bg pt-16 overflow-hidden section-fade-in"
     >
       <div className="container mx-auto px-6 md:px-12 py-12 flex flex-col items-center text-center z-10">
+        <div className="flex flex-col items-center mb-8">
+          <Avatar className="h-40 w-40 mb-6 border-4 border-white shadow-lg">
+            <AvatarImage src="/lovable-uploads/ab883711-4134-45cb-b782-065f26670bc2.png" alt="Susan Malla" />
+            <AvatarFallback>SM</AvatarFallback>
+          </Avatar>
+        </div>
+        
         <div 
           className="glass-panel rounded-2xl px-8 py-12 mb-8 w-full max-w-3xl mx-auto"
         >

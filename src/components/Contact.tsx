@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 type ContactItemProps = {
   icon: React.ReactNode;
@@ -19,6 +20,8 @@ const ContactItem = ({ icon, title, value, href }: ContactItemProps) => (
       <a
         href={href}
         className="text-primary hover:text-primary/80 transition-colors"
+        target={href.startsWith('http') ? "_blank" : undefined}
+        rel={href.startsWith('http') ? "noopener noreferrer" : undefined}
       >
         {value}
       </a>
@@ -67,7 +70,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <ContactItem
             icon={<Mail className="h-6 w-6" />}
             title="Email"
@@ -85,6 +88,38 @@ const Contact = () => {
             title="Location"
             value="Kathmandu, Nepal"
           />
+        </div>
+
+        <div className="max-w-md mx-auto text-center">
+          <h3 className="text-xl font-medium mb-4">Connect with me</h3>
+          <div className="flex justify-center gap-4">
+            <Button
+              variant="outline"
+              size="lg"
+              className="flex items-center gap-2"
+              asChild
+            >
+              <a href="mailto:mallasusan19@gmail.com">
+                <Mail className="h-5 w-5" />
+                Send Email
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="flex items-center gap-2"
+              asChild
+            >
+              <a 
+                href="https://www.linkedin.com/in/susan-malla" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="h-5 w-5" />
+                LinkedIn
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>

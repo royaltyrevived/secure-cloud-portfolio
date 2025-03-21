@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { ChevronUp, Github, Linkedin, Twitter } from 'lucide-react';
+import { ChevronUp, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const footerRef = useRef<HTMLElement>(null);
@@ -42,25 +42,29 @@ const Footer = () => {
 
           <div className="flex space-x-4 mb-8">
             <a
-              href="#"
+              href="https://github.com/susanmalla"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
               aria-label="Github"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/susan-malla"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="mailto:mallasusan19@gmail.com"
               className="p-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
-              aria-label="Twitter"
+              aria-label="Email"
             >
-              <Twitter className="h-5 w-5" />
+              <Mail className="h-5 w-5" />
             </a>
           </div>
 
