@@ -7,6 +7,7 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import MatrixBackground from '../components/MatrixBackground';
 
 const Index = () => {
   useEffect(() => {
@@ -34,7 +35,8 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-transparent">
+      <MatrixBackground />
       <Header />
       <Hero />
       <About />

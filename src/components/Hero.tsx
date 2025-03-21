@@ -2,7 +2,6 @@
 import { useEffect, useRef } from 'react';
 import { ChevronDownCircle } from 'lucide-react';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import MatrixBackground from './MatrixBackground';
 import TechLogos from './TechLogos';
 
 const Hero = () => {
@@ -34,8 +33,6 @@ const Hero = () => {
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center hero-bg pt-16 overflow-hidden section-fade-in"
     >
-      <MatrixBackground />
-      
       <div className="container mx-auto px-6 md:px-12 py-12 flex flex-col items-center text-center z-10">
         <div className="flex flex-col items-center mb-8">
           <Avatar className="h-40 w-40 mb-6 border-4 border-primary shadow-lg">
