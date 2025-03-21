@@ -10,11 +10,10 @@ type SkillCategory = {
 const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
   <div 
     className={cn(
-      "skill-tag py-2 px-4 rounded-lg font-medium text-sm bg-white border border-slate-100 shadow-sm",
-      "hover:border-primary/20 hover:bg-primary/5"
+      "skill-tag py-2 px-4 rounded-lg font-medium text-sm bg-black/50 border border-primary/20 shadow-sm",
+      "hover:border-primary/40 hover:bg-black/70"
     )}
     style={{ 
-      animationDelay: `${index * 50}ms`,
       opacity: 0,
       animation: 'fade-in 0.5s ease-out forwards',
       animationDelay: `${100 + index * 30}ms`
@@ -33,7 +32,7 @@ const SkillCategory = ({ category, index }: { category: SkillCategory; index: nu
       animationDelay: `${index * 100}ms`
     }}
   >
-    <h3 className="text-xl font-medium mb-4">{category.name}</h3>
+    <h3 className="text-xl font-medium mb-4 text-gradient">{category.name}</h3>
     <div className="flex flex-wrap gap-3">
       {category.skills.map((skill, idx) => (
         <SkillTag key={skill} skill={skill} index={idx} />
@@ -89,17 +88,17 @@ const Skills = () => {
     <section 
       id="skills" 
       ref={skillsRef} 
-      className="py-20 section-fade-in bg-gradient-to-b from-slate-50 to-white"
+      className="py-20 section-fade-in bg-gradient-to-b from-background to-black"
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Skills
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 matrix-code">
             Technical Expertise
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-cyan-400">
             Specialized skills in IT Security, Cloud Engineering, and Infrastructure Management.
           </p>
         </div>
