@@ -11,12 +11,12 @@ const AboutFeature = ({
   title: string; 
   description: string 
 }) => (
-  <div className="flex flex-col items-start p-6 rounded-xl bg-white/50 backdrop-blur-sm border border-slate-100 shadow-sm hover:shadow transition-all">
+  <div className="flex flex-col items-start p-6 rounded-xl glass-panel hover:shadow transition-all">
     <div className="p-3 rounded-lg bg-primary/10 text-primary mb-4">
       <Icon className="h-6 w-6" />
     </div>
-    <h3 className="text-lg font-medium mb-2">{title}</h3>
-    <p className="text-slate-600 leading-relaxed">{description}</p>
+    <h3 className="text-lg font-medium mb-2 text-white">{title}</h3>
+    <p className="text-cyan-400 leading-relaxed">{description}</p>
   </div>
 );
 
@@ -68,16 +68,16 @@ const About = () => {
   ];
 
   return (
-    <section id="about" ref={aboutRef} className="py-20 section-fade-in bg-gradient-to-b from-white to-slate-50">
+    <section id="about" ref={aboutRef} className="py-20 section-fade-in bg-black/80">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             About Me
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">
             IT Security Professional with Cloud Expertise
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed">
+          <p className="text-lg text-cyan-400 leading-relaxed">
             With over 4 years of specialized experience, I've enhanced security postures, 
             optimized cloud environments, and led IT teams to drive operational efficiency.
           </p>
@@ -95,7 +95,7 @@ const About = () => {
         </div>
         
         <div className="mt-16 max-w-3xl mx-auto text-center">
-          <p className="text-slate-700 leading-relaxed">
+          <p className="text-cyan-300 leading-relaxed">
             As a Chief Information Security Officer (CISO) at Novelty Technology, I spearheaded
             HiTrust certification efforts, reduced security threats, and improved system resilience
             through risk assessments, penetration testing, and compliance enforcement. I also led

@@ -68,19 +68,31 @@ const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
       name: 'Cloud & Infrastructure',
-      skills: ['AWS EC2', 'AWS ECS', 'AWS S3', 'AWS VPC', 'AWS IAM', 'AWS CloudFront', 'AWS RDS', 'AWS ECR', 'AWS ALB', 'Terraform', 'CloudFormation', 'Azure']
+      skills: [
+        'AWS', 'Azure', 'Kubernetes', 'Docker', 'Terraform', 
+        'Infrastructure Solution Architecture', 'SSL Management'
+      ]
     },
     {
       name: 'DevOps & Automation',
-      skills: ['CI/CD', 'GitHub Actions', 'CodeBuild', 'CodePipeline', 'Docker', 'AWS Secrets Manager', 'Linux', 'Windows Server', 'Bash', 'Python', 'PowerShell']
+      skills: [
+        'GitHub CI/CD', 'Linux', 'Bash', 'Windows Server', 
+        'New Relic', 'Monitoring and Alert Notification'
+      ]
     },
     {
       name: 'Security & Compliance',
-      skills: ['HiTrust', 'HIPAA', 'ISO 27001', 'Penetration Testing', 'BurpSuite', 'Nessus', 'Snyk', 'IAM', 'Access Control', 'SIEM', 'Wazuh', 'NewRelic']
+      skills: [
+        'ISO 27001:2022', 'HiTrust Readiness', 'Wazuh', 'BurpSuite', 
+        'Manual Security Testing', 'Endpoint Security Engineer'
+      ]
     },
     {
       name: 'Networking & Administration',
-      skills: ['Firewalls', 'VPN', 'Load Balancing', 'Hyper-V', 'VMware ESXi', 'VLANs', 'DNS', 'DHCP', 'BCP', 'DRP', 'IT Strategy']
+      skills: [
+        'Cisco', 'Firewalls', 'VPN', 'Load Balancing', 'VLAN', 
+        'DNS', 'DHCP'
+      ]
     }
   ];
 

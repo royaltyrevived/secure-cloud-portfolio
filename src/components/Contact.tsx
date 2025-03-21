@@ -11,11 +11,11 @@ type ContactItemProps = {
 };
 
 const ContactItem = ({ icon, title, value, href }: ContactItemProps) => (
-  <div className="flex flex-col items-center p-6 bg-white rounded-xl border border-slate-100 shadow-sm transition-all hover:shadow">
+  <div className="flex flex-col items-center p-6 glass-panel rounded-xl transition-all hover:shadow">
     <div className="p-3 mb-4 bg-primary/10 text-primary rounded-lg">
       {icon}
     </div>
-    <h3 className="font-medium mb-2">{title}</h3>
+    <h3 className="font-medium mb-2 text-white">{title}</h3>
     {href ? (
       <a
         href={href}
@@ -26,7 +26,7 @@ const ContactItem = ({ icon, title, value, href }: ContactItemProps) => (
         {value}
       </a>
     ) : (
-      <span className="text-slate-600">{value}</span>
+      <span className="text-cyan-300">{value}</span>
     )}
   </div>
 );
@@ -62,10 +62,10 @@ const Contact = () => {
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Contact
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">
             Get In Touch
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-cyan-400">
             Feel free to reach out for opportunities, collaborations, or questions.
           </p>
         </div>
@@ -91,12 +91,12 @@ const Contact = () => {
         </div>
 
         <div className="max-w-md mx-auto text-center">
-          <h3 className="text-xl font-medium mb-4">Connect with me</h3>
+          <h3 className="text-xl font-medium mb-4 text-white">Connect with me</h3>
           <div className="flex justify-center gap-4">
             <Button
               variant="outline"
               size="lg"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 text-primary border-primary hover:text-primary/80 hover:bg-black/40"
               asChild
             >
               <a href="mailto:mallasusan19@gmail.com">
@@ -107,7 +107,7 @@ const Contact = () => {
             <Button
               variant="outline"
               size="lg"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 text-primary border-primary hover:text-primary/80 hover:bg-black/40"
               asChild
             >
               <a 
