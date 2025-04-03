@@ -90,7 +90,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="max-w-md mx-auto text-center">
+        <div className="max-w-md mx-auto text-center mb-16">
           <h3 className="text-xl font-medium mb-4 text-white">Connect with me</h3>
           <div className="flex justify-center gap-4">
             <Button
@@ -111,7 +111,7 @@ const Contact = () => {
               asChild
             >
               <a 
-                href="https://www.linkedin.com/in/susan-malla" 
+                href="https://www.linkedin.com/in/susan-malla-b72122201/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -120,6 +120,27 @@ const Contact = () => {
               </a>
             </Button>
           </div>
+        </div>
+
+        <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="hipaa-badge" data-href="https://www.hipaatraining.com/badge" data-color="orig" data-type="4" data-width="200px" data-height="120px"></div>
+          
+          <a 
+            href="https://www.credly.com/badges/0014f03c-d0b2-414c-a1c1-e65f931803a1/linked_in_profile" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-panel p-4 rounded-xl transition-all hover:shadow flex items-center gap-4"
+          >
+            <img 
+              src="https://images.credly.com/size/680x680/images/659f017c-d204-4beb-9861-1a39db86c0b0/image.png" 
+              alt="ISO 27001:2022 Lead Auditor" 
+              className="w-20 h-20 object-contain" 
+            />
+            <div className="text-left">
+              <h4 className="text-white font-medium text-lg">ISO 27001:2022</h4>
+              <p className="text-cyan-300">Lead Auditor Certified</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
