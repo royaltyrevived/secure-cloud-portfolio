@@ -122,25 +122,26 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center items-center gap-8">
-          <div className="hipaa-badge" data-href="https://www.hipaatraining.com/badge" data-color="orig" data-type="4" data-width="200px" data-height="120px"></div>
-          
-          <a 
-            href="https://www.credly.com/badges/0014f03c-d0b2-414c-a1c1-e65f931803a1/linked_in_profile" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="glass-panel p-4 rounded-xl transition-all hover:shadow flex items-center gap-4"
-          >
-            <img 
-              src="https://images.credly.com/size/680x680/images/659f017c-d204-4beb-9861-1a39db86c0b0/image.png" 
-              alt="ISO 27001:2022 Lead Auditor" 
-              className="w-20 h-20 object-contain" 
-            />
-            <div className="text-left">
-              <h4 className="text-white font-medium text-lg">ISO 27001:2022</h4>
-              <p className="text-cyan-300">Lead Auditor Certified</p>
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-xl font-medium mb-8 text-white text-center">Certifications</h3>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+            <div className="glass-panel p-6 rounded-xl transition-all hover:shadow">
+              <div className="hipaa-badge" data-href="https://www.hipaatraining.com/badge" data-color="orig" data-type="4" data-width="200px" data-height="120px"></div>
             </div>
-          </a>
+            
+            <a 
+              href="https://www.credly.com/badges/0014f03c-d0b2-414c-a1c1-e65f931803a1/linked_in_profile" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-panel p-6 rounded-xl transition-all hover:shadow flex items-center justify-center"
+            >
+              <img 
+                src="/lovable-uploads/934c2894-e4c5-4d5a-8a48-aca98fd66233.png" 
+                alt="ISO 27001:2022 Lead Auditor" 
+                className="w-40 h-40 object-contain" 
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>

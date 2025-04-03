@@ -69,29 +69,67 @@ const Skills = () => {
     {
       name: 'Cloud & Infrastructure',
       skills: [
-        'AWS', 'Azure', 'Kubernetes', 'Docker', 'Terraform', 
-        'Infrastructure Solution Architecture', 'SSL Management'
+        'AWS (EC2, ECS, S3, ECR, VPC, IAM, CloudFront, ALB, RDS)',
+        'AWS Secrets Manager',
+        'AWS Well-Architected Framework',
+        'Azure',
+        'Terraform & CloudFormation',
+        'Docker',
+        'Infrastructure Solution Architecture',
+        'Backup & Disaster Recovery (BCP, DRP)',
+        'Hyper-V'
       ]
     },
     {
       name: 'DevOps & Automation',
       skills: [
-        'GitHub CI/CD', 'Linux', 'Bash', 'Windows Server', 
-        'New Relic', 'Monitoring and Alert Notification'
+        'CI/CD (GitHub Actions, CodeBuild, CodePipeline)',
+        'Linux (Ubuntu, CentOS)',
+        'Windows Server',
+        'Bash',
+        'PowerShell',
+        'Python',
+        'Infrastructure Monitoring',
+        'Process Automation',
+        'New Relic'
       ]
     },
     {
       name: 'Security & Compliance',
       skills: [
-        'ISO 27001:2022', 'HiTrust Readiness', 'Wazuh', 'BurpSuite', 
-        'Manual Security Testing', 'Endpoint Security Engineer'
+        'ISO 27001:2022',
+        'HiTrust Readiness',
+        'HIPAA',
+        'Wazuh',
+        'IAM & Access Control (AWS IAM, Jumpcloud)',
+        'Penetration Testing (BurpSuite, Nessus, Snyk)',
+        'SIEM & Threat Detection',
+        'Manual Security Testing',
+        'Incident Response & Forensics',
+        'SSL Management',
+        'Endpoint Security Engineer'
       ]
     },
     {
       name: 'Networking & Administration',
       skills: [
-        'Cisco', 'Firewalls', 'VPN', 'Load Balancing', 'VLAN', 
-        'DNS', 'DHCP'
+        'Cisco',
+        'Firewalls',
+        'VPN',
+        'Load Balancing',
+        'VLANs',
+        'DNS',
+        'DHCP',
+        'Network Security'
+      ]
+    },
+    {
+      name: 'Leadership & Management',
+      skills: [
+        'Team Leadership & Training',
+        'IT Strategy & Budgeting',
+        'Monitoring and Alert Notification',
+        'IT Policy Development'
       ]
     }
   ];

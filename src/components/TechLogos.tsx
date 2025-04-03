@@ -34,28 +34,30 @@ const TechLogos = () => {
     { name: 'GitHub', src: 'https://www.vectorlogo.zone/logos/github/github-icon.svg' },
     { name: 'Python', src: 'https://www.vectorlogo.zone/logos/python/python-icon.svg' },
     { name: 'Cisco', src: 'https://www.vectorlogo.zone/logos/cisco/cisco-ar21.svg' },
-    { name: 'VMware', src: 'https://www.vectorlogo.zone/logos/vmware/vmware-icon.svg' },
     { name: 'Windows', src: 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' },
     { name: 'Bash', src: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg' },
-    { name: 'PowerShell', src: 'https://learn.microsoft.com/en-us/windows/images/powershell.png' }
+    { name: 'PowerShell', src: 'https://learn.microsoft.com/en-us/windows/images/powershell.png' },
+    { name: 'Kubernetes', src: 'https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg' }
   ];
 
   return (
     <div ref={containerRef} className="section-fade-in py-6">
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center">
-        {logos.map((logo) => (
-          <div 
-            key={logo.name} 
-            className="flex flex-col items-center bg-black/20 backdrop-blur-sm rounded-lg p-4 transition-transform hover:scale-110"
-          >
-            <img 
-              src={logo.src} 
-              alt={`${logo.name} logo`} 
-              className="h-12 w-12 object-contain mb-2" 
-            />
-            <span className="text-xs font-medium text-cyan-400">{logo.name}</span>
-          </div>
-        ))}
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center">
+          {logos.map((logo) => (
+            <div 
+              key={logo.name} 
+              className="flex flex-col items-center bg-black/50 backdrop-blur-sm rounded-lg p-4 transition-transform hover:scale-110 border border-primary/20"
+            >
+              <img 
+                src={logo.src} 
+                alt={`${logo.name} logo`} 
+                className="h-12 w-12 object-contain mb-2" 
+              />
+              <span className="text-xs font-medium text-cyan-400">{logo.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

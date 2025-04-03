@@ -1,0 +1,14 @@
+
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    # Uncomment and adjust if you need environment variables
+    # environment:
+    #   - NODE_ENV=production
