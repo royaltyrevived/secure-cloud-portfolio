@@ -10,7 +10,7 @@ type SkillCategory = {
 const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
   <div 
     className={cn(
-      "skill-tag py-2 px-4 rounded-lg font-medium text-sm bg-black/50 border border-primary/20 shadow-sm",
+      "skill-tag py-1 px-3 rounded-lg font-medium text-sm bg-black/50 border border-primary/20 shadow-sm",
       "hover:border-primary/40 hover:bg-black/70"
     )}
     style={{ 
@@ -25,15 +25,15 @@ const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
 
 const SkillCategory = ({ category, index }: { category: SkillCategory; index: number }) => (
   <div 
-    className="mb-10"
+    className="mb-6"
     style={{ 
       opacity: 0,
       animation: 'fade-up 0.5s ease-out forwards',
       animationDelay: `${index * 100}ms`
     }}
   >
-    <h3 className="text-xl font-medium mb-4 text-gradient">{category.name}</h3>
-    <div className="flex flex-wrap gap-3">
+    <h3 className="text-xl font-medium mb-3 text-gradient">{category.name}</h3>
+    <div className="flex flex-wrap gap-2">
       {category.skills.map((skill, idx) => (
         <SkillTag key={skill} skill={skill} index={idx} />
       ))}
@@ -74,10 +74,7 @@ const Skills = () => {
         'AWS Well-Architected Framework',
         'Azure',
         'Terraform & CloudFormation',
-        'Docker',
-        'Infrastructure Solution Architecture',
-        'Backup & Disaster Recovery (BCP, DRP)',
-        'Hyper-V'
+        'Docker'
       ]
     },
     {
@@ -138,14 +135,14 @@ const Skills = () => {
     <section 
       id="skills" 
       ref={skillsRef} 
-      className="py-20 section-fade-in bg-gradient-to-b from-background to-black"
+      className="py-12 section-fade-in bg-gradient-to-b from-background to-black"
     >
       <div className="container mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-10">
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Skills
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 matrix-code">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 matrix-code">
             Technical Expertise
           </h2>
           <p className="text-lg text-cyan-400">
@@ -154,7 +151,7 @@ const Skills = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
             {skillCategories.map((category, index) => (
               <SkillCategory key={category.name} category={category} index={index} />
             ))}
