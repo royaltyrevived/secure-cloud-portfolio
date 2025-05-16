@@ -135,7 +135,7 @@ const Skills = () => {
     <section 
       id="skills" 
       ref={skillsRef} 
-      className="py-8 section-fade-in bg-gradient-to-b from-background to-black"
+      className="py-8 section-fade-in bg-gradient-to-b from-background to-black text-white"
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center mb-6">
