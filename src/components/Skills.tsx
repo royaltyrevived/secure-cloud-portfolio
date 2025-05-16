@@ -11,7 +11,7 @@ const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
   <div 
     className={cn(
       "skill-tag py-1 px-2 rounded-lg font-medium text-xs bg-black/50 border border-primary/20 shadow-sm",
-      "hover:border-primary/40 hover:bg-black/70"
+      "hover:border-primary/40 hover:bg-black/70 text-white"
     )}
     style={{ 
       opacity: 0,
@@ -32,7 +32,7 @@ const SkillCategory = ({ category, index }: { category: SkillCategory; index: nu
       animationDelay: `${index * 100}ms`
     }}
   >
-    <h3 className="text-lg font-medium mb-2 text-gradient">{category.name}</h3>
+    <h3 className="text-lg font-medium mb-2 text-white">{category.name}</h3>
     <div className="flex flex-wrap gap-1">
       {category.skills.map((skill, idx) => (
         <SkillTag key={skill} skill={skill} index={idx} />
@@ -142,7 +142,7 @@ const Skills = () => {
           <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
             Skills
           </div>
-          <h2 className="text-2xl md:text-3xl font-display font-bold mb-3 matrix-code">
+          <h2 className="text-2xl md:text-3xl font-display font-bold mb-3 text-primary">
             Technical Expertise
           </h2>
           <p className="text-base text-white">
