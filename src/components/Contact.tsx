@@ -126,7 +126,11 @@ const Contact = () => {
           <h3 className="text-xl font-medium mb-8 text-white text-center">Certifications</h3>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             <div className="glass-panel p-6 rounded-xl transition-all hover:shadow">
-              <div className="hipaa-badge" data-href="https://www.hipaatraining.com/badge" data-color="orig" data-type="4" data-width="200px" data-height="120px"></div>
+              <img 
+                src="/lovable-uploads/4b75a4cb-d759-41aa-8cf5-de34bf0738dd.png"
+                alt="HIPAA Compliant"
+                className="w-40 h-auto object-contain"
+              />
             </div>
             
             <a 

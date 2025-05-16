@@ -10,7 +10,7 @@ type SkillCategory = {
 const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
   <div 
     className={cn(
-      "skill-tag py-1 px-3 rounded-lg font-medium text-sm bg-black/50 border border-primary/20 shadow-sm",
+      "skill-tag py-1 px-2 rounded-lg font-medium text-xs bg-black/50 border border-primary/20 shadow-sm",
       "hover:border-primary/40 hover:bg-black/70"
     )}
     style={{ 
@@ -25,15 +25,15 @@ const SkillTag = ({ skill, index }: { skill: string; index: number }) => (
 
 const SkillCategory = ({ category, index }: { category: SkillCategory; index: number }) => (
   <div 
-    className="mb-6"
+    className="mb-4"
     style={{ 
       opacity: 0,
       animation: 'fade-up 0.5s ease-out forwards',
       animationDelay: `${index * 100}ms`
     }}
   >
-    <h3 className="text-xl font-medium mb-3 text-gradient">{category.name}</h3>
-    <div className="flex flex-wrap gap-2">
+    <h3 className="text-lg font-medium mb-2 text-gradient">{category.name}</h3>
+    <div className="flex flex-wrap gap-1">
       {category.skills.map((skill, idx) => (
         <SkillTag key={skill} skill={skill} index={idx} />
       ))}
@@ -135,23 +135,23 @@ const Skills = () => {
     <section 
       id="skills" 
       ref={skillsRef} 
-      className="py-12 section-fade-in bg-gradient-to-b from-background to-black"
+      className="py-8 section-fade-in bg-gradient-to-b from-background to-black"
     >
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mx-auto text-center mb-10">
-          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+      <div className="container mx-auto px-4 md:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-6">
+          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
             Skills
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 matrix-code">
+          <h2 className="text-2xl md:text-3xl font-display font-bold mb-3 matrix-code">
             Technical Expertise
           </h2>
-          <p className="text-lg text-cyan-400">
+          <p className="text-base text-cyan-400">
             Specialized skills in IT Security, Cloud Engineering, and Infrastructure Management.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-3">
             {skillCategories.map((category, index) => (
               <SkillCategory key={category.name} category={category} index={index} />
             ))}
