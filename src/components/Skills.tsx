@@ -145,7 +145,7 @@ const Skills = () => {
           <h2 className="text-2xl md:text-3xl font-display font-bold mb-3 matrix-code">
             Technical Expertise
           </h2>
-          <p className="text-base text-cyan-400">
+          <p className="text-base text-white">
             Specialized skills in IT Security, Cloud Engineering, and Infrastructure Management.
           </p>
         </div>
